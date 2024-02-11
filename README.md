@@ -1,2 +1,3 @@
 # dataremix.us
-Code for the website of dataremix.us.
+
+Data-driven insights into the American experience.
