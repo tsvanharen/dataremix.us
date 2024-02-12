@@ -1,3 +1,3 @@
 # dataremix.us
 
-Data-driven insights into the American experience.
+Data-driven insights into the human experience.
