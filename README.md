@@ -26,6 +26,7 @@ Will shift to its own page eventually.  Just getting some notes documented.
 * Style H1, etc. tags
 * Search bar (top right nav)
 * Favicon
+* Storybook deployment as part of the build
 * First insight:  "How likely is it that your home will be broken into?"
 * Second insight?  "Why does it seem like the world is getting worse?"
 * Reading level, reading time, published date (maybe rethink that one?) on every insight
