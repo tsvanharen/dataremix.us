@@ -1,26 +1,40 @@
-import { Routes } from "@/utils/routes";
-import Link from "next/link";
-import Logo from "./Logo";
+"use client"
 
-export default function Header({
-  logoClassName, 
-  
-}: {
-  logoClassName?: string, 
-}){
+import { Route } from "@/utils/routes";
+import Link from "next/link";
+import { usePathname } from 'next/navigation'
+import Logo, { Variant } from "./Logo";
+
+const navItems = [
+  {href: Route.HOME, text: 'Home'},
+  {href: Route.INSIGHTS, text: 'Insights'},
+  {href: Route.FAQS, text: 'FAQs'},
+]
+
+export default function Header(){
+  const pathName = usePathname();
+  const showLogo = (pathName !== Route.HOME)
+
   return (
-    <header className="mx-auto max-w-5xl w-full">
-      <div className="z-10 max-w-5xl w-full items-center lg:flex">
-        <div className="fixed left-0 top-0 flex w-full pb-6 pt-8 lg:static lg:w-auto pr-8">
-          <Logo logoClassName={logoClassName} />
+    <header className="w-full border-b-4 border-slate-700">
+      <div className="max-w-5xl mx-auto w-full items-center justify-center flex">
+        <div className="flex-1">
+          {showLogo && <Logo />}
         </div>
         <nav>
           <ul>
-            <li><Link href={Routes.HOME} title="Home">Home</Link></li>
-            <li><Link href={Routes.INSIGHTS} title="Insights">Insights</Link></li>
+            {
+              navItems.map((navItem) => {
+                const linkStyle = (pathName === navItem.href ? 'current' : '');
+
+                return (
+                  <li key={navItem.href}><Link href={navItem.href} title={navItem.text} className={linkStyle}>{navItem.text}</Link></li>
+                )
+              })
+            }
           </ul>
         </nav>
-        
+        <div className="flex-1"></div>
           {/* 
           <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
             <a

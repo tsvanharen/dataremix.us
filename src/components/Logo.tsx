@@ -1,39 +1,43 @@
-import { Routes } from "@/utils/routes"
+import { Route } from "@/utils/routes"
 import Link from "next/link"
+import { Open_Sans } from "next/font/google";
 
-export default function Logo({
-  logoClassName, 
-}: {
-  logoClassName?: string, 
-}) {
-  return (
-    <Link 
-      href={Routes.HOME} 
-      title="Home" 
-      className={`${logoClassName} uppercase tracking-tighter text-3xl font-bold drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-gray-300 hover:text-slate-900`}
-    >
-      Data<span className="inline-block px-1 text-4xl">|</span><span className="inline-block scale-x-[-1]">Remix</span>
-    </Link>
-  )
+const logoFont = Open_Sans({ subsets: ["latin"] });
+
+export enum Variant {
+  Large = 'large'
 }
 
-// export default function Logo({
-//   logoClassName1, 
-//   logoClassName2
-// }: {
-//   logoClassName1?: string, 
-//   logoClassName2?: string
-// }) {
-//   const nameElement = (<><span className="uppercase">Data</span><span className={`${logoClassName2} uppercase`}>Remix</span></>)
+export default function Logo({
+  variant
+}: {
+  variant?: Variant
+}) {
+  let linkStyle = 'uppercase tracking-[-0.1rem] text-3xl font-light hover:no-underline';
+  let slashStyle = 'inline-block text-4xl relative top-[0.15rem] text-stone-600 scale-125'
 
-//   return (
-//     <Link 
-//       href={Routes.HOME} 
-//       title="Home" 
-//       className={`${logoClassName1} leading-none hover:scale-x-[-1] tracking-tighter text-lg font-bold transition ease-in-out delay-150 duration-500`}
-//     >
-//       <div className="px-4 border-b-2 border-b-black pb-1">{nameElement}</div>
-//       <div className="px-4 scale-x-[-1] pt-1">{nameElement}</div>
-//     </Link>
-//   )
-// }
+  if (variant === Variant.Large) {
+    linkStyle = 'uppercase tracking-[-0.1rem] text-7xl font-light hover:no-underline cursor-default';
+    slashStyle = 'inline-block text-8xl relative top-[0.45rem] text-stone-600'
+  }
+
+  const text = (<><span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-stone-600 pr-2">Data</span><span className={slashStyle}>/</span><span className="inline-block scale-x-[-1] text-transparent bg-clip-text bg-gradient-to-l from-stone-600 to-purple-700 pr-2">Remix</span></>);
+
+  return (
+    <>
+      {variant !== Variant.Large && <Link 
+        href={Route.HOME} 
+        title="Data/Remix Home" 
+        className={`${logoFont.className} ${linkStyle}`}
+      >
+        {text}
+      </Link>}
+
+      {variant === Variant.Large && <div
+        className={`${logoFont.className} ${linkStyle}`}
+      >
+        {text}
+      </div>}
+    </>
+  )
+}

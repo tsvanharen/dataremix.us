@@ -2,16 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+a {
+  @apply text-sky-700 hover:underline
+}
+p, ul {
+  @apply pb-4
+}
+
+ul {
+  @apply list-disc list-outside ml-8
+}
+
+ul > li::before {
+  content: "";
+  @apply -mr-5
+}
+
+ul > li {
+  @apply indent-5
+}
+
+
 nav {
-  @apply pt-8 pb-6
+  @apply pt-8 pb-2
+}
+
+nav ul {
+  @apply list-none ml-0
+}
+
+nav ul li::before {
+  content: "";
+  @apply mr-0
 }
 
 nav ul li {
-  @apply inline-block pl-8
+  @apply inline-block pl-8 indent-0
+}
+
+nav ul li:first-child {
+  @apply pl-0
+}
+
+nav ul li a.current {
+  @apply  border-b-sky-700 border-b-2
 }
 
 nav ul li a {
-  @apply block border-b-2 border-b-transparent hover:text-slate-900 hover:border-b-slate-900 px-2 pb-1
+  @apply text-black block border-b-2 border-b-transparent hover:text-slate-900 hover:border-b-slate-900 px-2 pb-1 hover:no-underline
 }
 
 aside[role=navigation] {
@@ -27,30 +65,13 @@ aside[role=navigation] ul li {
 }
 
 main {
-  @apply p-4
+  @apply py-4
 }
 
-
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+h3 {
+  @apply text-2xl font-bold mb-4 border-b-2 border-b-slate-900
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.button {
+  @apply bg-sky-700 text-white inline-block text-center rounded-lg py-4 px-16 font-bold hover:bg-sky-800 hover:no-underline transition ease-in-out delay-150 duration-300 uppercase text-sm tracking-wider
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
