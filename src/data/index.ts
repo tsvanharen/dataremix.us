@@ -7,9 +7,9 @@ type State = {
   population: number;
 }
 
-// DO NOT MODIFY BELOW DIRECTLY
+// AUTO-GENERATED - DO NOT MODIFY BELOW DIRECTLY
 // generated from pasting the data from 2022-07-01-estimates-by-state.csv into https://csvjson.com/csv2json,
-// then modified the keys to allow easier creation of usable types
+// then modified the keys to allow easier creation of usable types (above)
 const data: Data = [
   {
     name: "Alabama",

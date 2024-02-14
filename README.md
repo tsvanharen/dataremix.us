@@ -1,10 +1,11 @@
-# dataremix.us
+# DataRemix
 
 Data-driven insights into the modern human experience.
 
 ## Hosting
 
-* Registrar and DNS management by Cloudflare (not using its proxy at this time)
+* Website can be found at dataremix.us
+* Registrar and DNS management by Cloudflare (note that we are not using its proxy/CDN at this time)
 * Deployed with GitHub Actions
 * Hosted at GitHub Pages
 
