@@ -1,8 +1,6 @@
+import { logoFont } from "@/styles/fonts";
 import { Route } from "@/utils/routes"
 import Link from "next/link"
-import { Open_Sans } from "next/font/google";
-
-const logoFont = Open_Sans({ subsets: ["latin"] });
 
 export enum Variant {
   Large = 'large'

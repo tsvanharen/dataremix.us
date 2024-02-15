@@ -2,7 +2,7 @@
 #
 # To get started with Next.js see: https://nextjs.org/docs/getting-started
 #
-name: Deploy Next.js Site to GitHub Pages
+name: build/deploy
 
 on:
   # Runs on pushes targeting the default branch
@@ -75,6 +75,9 @@ jobs:
 
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
+
+      - name: Build Storybook
+        run: ${{ steps.detect-package-manager.outputs.runner }} storybook build -o ./public/storybook
 
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3

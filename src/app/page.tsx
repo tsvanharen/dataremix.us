@@ -51,7 +51,7 @@ export default function PageHome() {
           <section className="pt-8 pl-8 flex-1">
             <h3>Methodology</h3>
             <ul>
-              <li>We curate topics (called <span className="italic">Insights</span>) that have data sets that are freely available for anyone to download, view, query, filter, sort, aggregate, and summarize as they see fit.</li>
+              <li>We curate topics (called <span className="italic">Insights</span>) that rely on data sets that are freely available for anyone to download, view, query, filter, sort, aggregate, and summarize as they see fit.</li>
               <li>We annotate, attribute, and link to sources wherever we use information or data from external sources.</li>
               <li>Find more details on the <Link href={Route.FAQS} title="FAQs">FAQs</Link> page.</li>
             </ul>

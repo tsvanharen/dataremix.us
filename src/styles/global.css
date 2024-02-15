@@ -52,26 +52,42 @@ nav ul li a {
   @apply text-black block border-b-2 border-b-transparent hover:text-slate-900 hover:border-b-slate-900 px-2 pb-1 hover:no-underline
 }
 
-aside[role=navigation] {
-  @apply bg-slate-100 rounded-md border-solid border-slate-900 h-screen sticky top-0 p-4
-}
-
-aside[role=navigation] h3 {
-  @apply uppercase text-sm font-bold mb-2
-}
-
-aside[role=navigation] ul li {
-  @apply mx-4 whitespace-nowrap hover:border-b-2 hover:mb-1 hover:border-spacing-1 hover:border-b-slate-900
-}
-
 main {
   @apply py-4
 }
 
+h1 {
+  @apply text-4xl my-5
+}
+
+h2 {
+  @apply text-3xl my-4
+}
+
 h3 {
-  @apply text-2xl font-bold mb-4 border-b-2 border-b-slate-900
+  @apply text-2xl my-3
+}
+
+h4 {
+  @apply text-xl my-2
+}
+
+h5 {
+  @apply text-lg my-1
 }
 
 .button {
   @apply bg-sky-700 text-white inline-block text-center rounded-lg py-4 px-16 font-bold hover:bg-sky-800 hover:no-underline transition ease-in-out delay-150 duration-300 uppercase text-sm tracking-wider
+}
+
+table th {
+  @apply border-b-2 border-solid border-black
+}
+
+table th {
+  @apply px-3 py-1 text-left
+}
+
+table td {
+  @apply px-3 py-2 border-b-[1px] border-gray-300
 }
