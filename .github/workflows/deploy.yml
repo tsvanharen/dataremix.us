@@ -84,7 +84,7 @@ jobs:
           pwd
           ls -ll
           cd public && ls -ll
-          cd ..out && ls -ll
+          cd ../out && ls -ll
 
 
       - name: Upload Artifact
