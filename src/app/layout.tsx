@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Open_Sans } from "next/font/google";
-import "./globals.css";
+import "@/styles/global.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
-const baseFont = Playfair_Display({ subsets: ["latin"] });
+import { baseFont } from "@/styles/fonts";
 
 export const metadata: Metadata = {
   title: "Data/Remix",
