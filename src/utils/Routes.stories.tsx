@@ -25,7 +25,7 @@ function Routes() {
                 const [key, value] = entry;
 
                 return (
-                  <tr>
+                  <tr key={value}>
                     <td>{key}</td>
                     <td>{value}</td>
                   </tr>
