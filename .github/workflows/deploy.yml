@@ -77,15 +77,11 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
       - name: Build Storybook
-        run: ${{ steps.detect-package-manager.outputs.runner }} storybook build -o ./public/storybook
+        run: ${{ steps.detect-package-manager.outputs.runner }} storybook build -o ./out
 
-      - name: Print Folder Structure
+      - name: Print Build Output Folder
         run: |
-          pwd
-          ls -ll
-          cd public && ls -ll
-          cd ../out && ls -ll
-
+          cd out && pwd && ls -ll
 
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
