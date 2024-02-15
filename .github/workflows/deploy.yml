@@ -83,7 +83,8 @@ jobs:
         run: |
           pwd
           ls -ll
-          cd public && ls-ll
+          cd public && ls -ll
+          cd ../output && ls -ll
 
 
       - name: Upload Artifact
