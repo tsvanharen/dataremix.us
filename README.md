@@ -25,6 +25,7 @@ Will shift to its own page eventually.  Just getting some notes documented.
 * Template (fonts, branding, styling, layouts)
 * Search bar (top right nav)
 * Favicon
+* Sitemap xml and page
 * Mobile layout/responsiveness
 * Insights landing page layout (probably a grid) (use GetInsightsRoutes to build grid of insights)
 * Insights detail page layout plus sidebar (use GetInsightsRoutes to build sidebar)
