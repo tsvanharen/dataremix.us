@@ -34,6 +34,7 @@ Will shift to its own page eventually.  Just getting some notes documented.
 * Template (fonts, branding, styling, layouts)
 * Search bar (top right nav) (maybe only include in inner pages)
 * Favicon
+* Sitemap xml and page
 * More unit tests
 * Mobile layout/responsiveness
 * Document methodologies
