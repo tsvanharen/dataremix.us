@@ -1,12 +1,15 @@
 export default function PageInsights() {
   return (
-    <section>
+    <>
+      <section>
         <h1>
           Insights
         </h1>
         <p>
-          Coming soon.
+          More info coming soon.
         </p>
       </section>
-  )
+      <section className="grid" />
+    </>
+  );
 }

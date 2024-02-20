@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { HeaderInner } from './';
+import { HeaderInner } from '.';
 
 const meta = {
   title: 'Headers',
