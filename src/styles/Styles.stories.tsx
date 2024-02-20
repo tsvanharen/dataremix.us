@@ -61,7 +61,7 @@ function Styles() {
       <section>
         <h2 className="border-b-2 border-black">Other Elements</h2>
         <p>
-        { /* eslint-disable-next-line jsx-a11y/anchor-is-valid */ }
+          { /* eslint-disable-next-line jsx-a11y/anchor-is-valid */ }
           <a href="#" onClick={(e) => e?.preventDefault()} className="button">This is a button</a>
         </p>
         <p>

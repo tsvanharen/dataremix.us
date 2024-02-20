@@ -1,6 +1,34 @@
 {
   "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "airbnb-typescript",
     "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:storybook/recommended"
-  ]
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "root": true,
+  "rules": {
+    "max-len": 0,
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+    "react/require-default-props": [
+      "error",
+      {
+        // "forbidDefaultForRequired": true
+        "functions": "defaultArguments"
+      }
+    ]
+  }
 }

@@ -4,6 +4,12 @@ Data-driven insights into the modern human experience.
 
 [![build/deploy](https://github.com/tsvanharen/dataremix.us/actions/workflows/deploy.yml/badge.svg)](https://github.com/tsvanharen/dataremix.us/actions/workflows/deploy.yml)
 
+## Documentation
+
+* Branding and component styling:  Storybook (https://dataremix.us/storybook)
+* Unit testing:  vitest
+* README on the `syllable` package:  (/syllable/README.md)
+
 ## Hosting
 
 * Website can be found at dataremix.us
@@ -17,21 +23,27 @@ Data-driven insights into the modern human experience.
 * Managing a custom domain for your GitHub Pages site (https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
 * One A record pointing to multiple IPs (https://community.cloudflare.com/t/one-a-record-pointing-to-multiple-ips/249887/3)
 * Convert CSV to JSON (https://csvjson.com/csv2json)
+* syllable, pluralize, normalize-strings
+* Check dictionary words (re: syllable):  https://github.com/words/syllable/pull/33#issuecomment-507716483
 
 ## Roadmap
 
 Will shift to its own page eventually.  Just getting some notes documented.
 
+* Staging environment in GHA
 * Template (fonts, branding, styling, layouts)
-* Search bar (top right nav)
+* Search bar (top right nav) (maybe only include in inner pages)
 * Favicon
+* More unit tests
 * Mobile layout/responsiveness
+* Document methodologies
+  * reading ease: flesch-kincaid
+  * reading speed/wpm:  https://en.wikipedia.org/wiki/Reading#:~:text=Research%20published%20in%202019%20concluded,to%20320%20words%20per%20minute.
+* Add collaboration documentation/file
 * Insights landing page layout (probably a grid) (use GetInsightsRoutes to build grid of insights)
 * Insights detail page layout plus sidebar (use GetInsightsRoutes to build sidebar)
-* Storybook deployment as part of the build
 * First insight:  "How likely is it that your home will be broken into?"
 * Second insight?  "Why does it seem like the world is getting worse?"
-* Reading level, reading time, published date (maybe rethink that one?) on every insight
 * Document data sets used, any links used for data, and be clear on methodology for each insight.  Annotation is table stakes for this endeavor.
   * Dataset:  housing unit estimates by state, July 1, 2022:  https://www.census.gov/data/datasets/time-series/demo/popest/2020s-total-housing-units.html#v2022
   * Dataset:  burgleries by state for 2022:  https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/query

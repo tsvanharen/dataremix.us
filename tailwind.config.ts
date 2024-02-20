@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 /* eslint-disable global-require */
 export default {
   darkMode: 'class',

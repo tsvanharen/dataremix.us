@@ -1,7 +1,4 @@
-import { Route } from "@/utils/routes";
-import Link from "next/link";
-
-/* use this on individual insight pages 
+/* use this on individual insight pages
 set current page style like the header nav
 */
 export default function InsightsSideBar() {
@@ -9,10 +6,10 @@ export default function InsightsSideBar() {
     <aside role="navigation" className="bg-slate-200 rounded-md border-solid border-slate-900 p-4 w-64 mr-8">
       <h3>Insights</h3>
       <ul>
-        <li><Link href={Route.INSIGHT_HOME_BREAK_INS} title="Home Break-Ins">Home Break-Ins</Link></li>
+        {/* <li><Link href={Route.INSIGHT_HOME_BREAK_INS} title="Home Break-Ins">Home Break-Ins</Link></li> */}
       </ul>
     </aside>
-  )
+  );
 }
 
 // aside[role=navigation] {

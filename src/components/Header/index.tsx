@@ -1,23 +1,24 @@
-"use client"
+'use client';
 
-import { Route } from "@/utils/routes";
-import Link from "next/link";
-import { usePathname } from 'next/navigation'
-import Logo from "../Logo";
+import { Route } from '@/utils/routes';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import Logo from '../Logo';
 
 const navItems = [
-  {href: Route.HOME, text: 'Home'},
-  {href: Route.INSIGHTS, text: 'Insights'},
-  {href: Route.FAQS, text: 'FAQs'},
-]
+  { href: Route.HOME, text: 'Home' },
+  { href: Route.INSIGHTS, text: 'Insights' },
+  { href: Route.FAQS, text: 'FAQs' },
+];
 
 export function HeaderInner(
   {
     pathName,
   }: {
     pathName: string,
-  }) {
-  const showLogo = (pathName !== Route.HOME)
+  },
+) {
+  const showLogo = (pathName !== Route.HOME);
 
   return (
     <header className="w-full border-b-4 border-slate-700">
@@ -37,22 +38,21 @@ export function HeaderInner(
                       {navItem.text}
                     </Link>
                   </li>
-                )
+                );
               })
             }
           </ul>
         </nav>
-        <div className="flex-1"></div>
+        <div className="flex-1" />
       </div>
     </header>
-  )
+  );
 }
 
 export default function Header() {
   const pathName = usePathname();
 
-  if (!pathName)
-  {
+  if (!pathName) {
     return null;
   }
 
