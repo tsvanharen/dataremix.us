@@ -74,7 +74,9 @@ export default function PageHome() {
           Get started on the Insights landing page now:
         </p>
         <div className="text-center">
-          <Link href={Route.INSIGHTS} title="Insights" className="button">Go to Insights ➤</Link>
+          <Link href={Route.INSIGHTS} title="Insights" className="button">
+            Insights »
+          </Link>
         </div>
       </section>
     </>

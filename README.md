@@ -2,7 +2,10 @@
 
 Data-driven insights into the modern human experience.
 
-[![build/deploy](https://github.com/tsvanharen/dataremix.us/actions/workflows/deploy.yml/badge.svg)](https://github.com/tsvanharen/dataremix.us/actions/workflows/deploy.yml) [![test](https://github.com/tsvanharen/dataremix.us/actions/workflows/test.yml/badge.svg)](https://github.com/tsvanharen/dataremix.us/actions/workflows/test.yml)
+<p align="center">
+[![build/deploy](https://github.com/tsvanharen/dataremix.us/actions/workflows/deploy.yml/badge.svg)](https://github.com/tsvanharen/dataremix.us/actions/workflows/deploy.yml) [![test](https://github.com/tsvanharen/dataremix.us/actions/workflows/test.yml/badge.svg)](https://github.com/tsvanharen/dataremix.us/actions/workflows/test.yml) [![GPLv3 License](https://img.shields.io/badge/license-GPL%20v3-limegreen.svg)](https://github.com/tsvanharen/dataremix.us/blob/main/LICENSE)
+</p>
+
 
 ## Documentation
 
@@ -25,6 +28,8 @@ Data-driven insights into the modern human experience.
 * Convert CSV to JSON (https://csvjson.com/csv2json)
 * syllable, pluralize, normalize-strings
 * Check dictionary words (re: syllable):  https://github.com/words/syllable/pull/33#issuecomment-507716483
+* https://shields.io/
+* https://heroicons.com/
 
 ## Roadmap
 
@@ -39,6 +44,7 @@ Will shift to its own page eventually.  Just getting some notes documented.
 * Mobile layout/responsiveness
 * Document methodologies
   * reading ease: flesch-kincaid
+  * reading scores and colors (same as in Storybook?)
   * reading speed/wpm:  https://en.wikipedia.org/wiki/Reading#:~:text=Research%20published%20in%202019%20concluded,to%20320%20words%20per%20minute.
 * Add collaboration documentation/file
 * Insights landing page layout (probably a grid) (use GetInsightsRoutes to build grid of insights)

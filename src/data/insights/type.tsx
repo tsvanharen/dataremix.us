@@ -2,19 +2,20 @@ import { ReadabilityBadgeParams } from '@/components/ReadabilityBadge';
 import readingEase from '@/utils/flesch-kincaid';
 import { ReactElement, ReactNode, isValidElement } from 'react';
 
-export interface Insight {
-  slug: string,
-  title: string,
-  publishDate: Date,
-  lastModifiedDate?: Date,
-  content: ReactNode,
-  readingLevel: ReadabilityBadgeParams,
-  readingTimeMinutes: number,
-}
+// export interface Insight {
+//   slug: string,
+//   title: string,
+//   publishDate: Date,
+//   lastModifiedDate?: Date,
+//   content: ReactNode,
+//   readingLevel: ReadabilityBadgeParams,
+//   readingTimeMinutes: number,
+// }
 
 interface InsightParams {
   slug: string,
   title: string,
+  intro: string,
   publishDate: Date,
   lastModifiedDate?: Date,
   content: ReactNode,
@@ -46,33 +47,42 @@ export function extractStrings(obj: ReactNode | string | unknown | undefined | n
   return obj.toString();
 }
 
-export function createInsight(params: InsightParams) {
-  // we need to compute reading level and reading time
-  const text = extractStrings(params.content);
-  const re = readingEase(text);
+export class Insight {
+  readonly slug: string;
 
-  const readingLevel = {
-    ease: re.ease ?? 0,
-    twClassName: re.twClassName ?? '',
-    usGradeLevel: re.usGradeLevel ?? '',
-    description: re.description ?? '',
-  };
+  readonly title: string;
 
-  const { readingTimeMinutes } = re;
+  readonly intro: string;
 
-  // const readingLevel = {
-  //   ease: 0, twClassName: '', usGradeLevel: '', description: '',
-  // };
+  readonly publishDate: Date;
 
-  // const readingTimeMinutes = 0;
+  readonly lastModifiedDate?: Date;
 
-  return {
-    slug: params.slug,
-    title: params.title,
-    publishDate: params.publishDate,
-    lastModifiedDate: params.lastModifiedDate,
-    content: params.content,
-    readingLevel,
-    readingTimeMinutes,
-  };
+  readonly content: ReactNode;
+
+  readonly readingLevel: ReadabilityBadgeParams;
+
+  readonly readingTimeMinutes: number;
+
+  constructor(params: InsightParams) {
+    this.slug = params.slug;
+    this.title = params.title;
+    this.intro = params.intro;
+    this.publishDate = params.publishDate;
+    this.lastModifiedDate = params.lastModifiedDate;
+    this.content = params.content;
+
+    // compute and set reading level and reading time
+    const text = extractStrings(params.content);
+    const re = readingEase(text);
+
+    this.readingLevel = {
+      ease: re.ease ?? 0,
+      twClassName: re.twClassName ?? '',
+      usGradeLevel: re.usGradeLevel ?? '',
+      description: re.description ?? '',
+    };
+
+    this.readingTimeMinutes = re.readingTimeMinutes;
+  }
 }
