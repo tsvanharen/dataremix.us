@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import _Routes from './routes';
+import { Route } from './routes';
 
 function Routes() {
   return (
@@ -21,7 +21,7 @@ function Routes() {
         </thead>
         <tbody>
           {
-              Object.entries(_Routes).map((entry) => {
+              Object.entries(Route).map((entry) => {
                 const [key, value] = entry;
 
                 return (
