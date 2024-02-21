@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { insights } from './index';
+import insights from './index';
 
 describe('getInsights', () => {
   test.each([
