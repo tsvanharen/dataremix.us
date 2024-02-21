@@ -8,6 +8,7 @@ import Logo from '../Logo';
 const navItems = [
   { href: Route.HOME, text: 'Home' },
   { href: Route.INSIGHTS, text: 'Insights' },
+  { href: Route.INSIGHTS_CATEGORIES, text: 'Categories' },
   { href: Route.FAQS, text: 'FAQs' },
 ];
 
