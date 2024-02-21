@@ -2,15 +2,13 @@ import { ReadabilityBadgeParams } from '@/components/ReadabilityBadge';
 import readingEase from '@/utils/flesch-kincaid';
 import { ReactElement, ReactNode, isValidElement } from 'react';
 
-// export interface Insight {
-//   slug: string,
-//   title: string,
-//   publishDate: Date,
-//   lastModifiedDate?: Date,
-//   content: ReactNode,
-//   readingLevel: ReadabilityBadgeParams,
-//   readingTimeMinutes: number,
-// }
+export type InsightCategory = {
+  slug: string
+  title: string
+  intro: string
+};
+
+type ChangeFrequency = 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never' | undefined;
 
 interface InsightParams {
   slug: string,
@@ -18,6 +16,9 @@ interface InsightParams {
   intro: string,
   publishDate: Date,
   lastModifiedDate?: Date,
+  changeFrequency?: ChangeFrequency,
+  priority?: number,
+  categories: InsightCategory[],
   content: ReactNode,
 }
 
@@ -58,6 +59,12 @@ export class Insight {
 
   readonly lastModifiedDate?: Date;
 
+  readonly changeFrequency?: ChangeFrequency;
+
+  readonly priority?: number;
+
+  readonly categories: InsightCategory[];
+
   readonly content: ReactNode;
 
   readonly readingLevel: ReadabilityBadgeParams;
@@ -70,7 +77,15 @@ export class Insight {
     this.intro = params.intro;
     this.publishDate = params.publishDate;
     this.lastModifiedDate = params.lastModifiedDate;
+    this.changeFrequency = params.changeFrequency;
+    this.categories = params.categories;
     this.content = params.content;
+
+    if (params.priority && (params.priority < 0 || params.priority > 1)) {
+      throw new Error(`priority must be between 0 and 1 inclusive; received ${params.priority}`);
+    }
+
+    this.priority = params.priority;
 
     // compute and set reading level and reading time
     const text = extractStrings(params.content);

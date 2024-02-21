@@ -17,7 +17,7 @@ Data-driven insights into the modern human experience.
 * Built and deployed with GitHub Actions
 * Hosted at GitHub Pages
 
-## Links to things that helped get this site setup
+## Links and notes that helped get this site setup
 
 * Next.js GitHub Pages (https://github.com/gregrickaby/nextjs-github-pages/tree/main)
 * Managing a custom domain for your GitHub Pages site (https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
@@ -27,17 +27,34 @@ Data-driven insights into the modern human experience.
 * Check dictionary words (re: syllable):  https://github.com/words/syllable/pull/33#issuecomment-507716483
 * https://shields.io/
 * https://heroicons.com/
+* Setting priority on content (from https://www.contentpowered.com/blog/xml-sitemap-priority-changefreq/):
+  * 0.0 – 0.3: Old news posts, outdated guides, irrelevant pages you nevertheless don't want to delete, merge, or update.
+  * 0.4 – 0.7: Articles, blog posts, category pages, FAQs, system pages. The bulk of your site's content falls into this range.
+  * 0.8 – 1.0: Extremely important content, such as your homepage, major category pages, product pages, and subdomain indexes.
+* Sitemaps (https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap#xml)
+  * Google ignores <priority> and <changefreq> values.
+  * Google uses the <lastmod> value if it's consistently and verifiably (for example by comparing to the last modification of the page) accurate.
 
 ## Roadmap
 
 Will shift to its own page eventually.  Just getting some notes documented.
 
 * Staging environment in GHA
+* Submit sitemap through Google Search Console
+* Google Analytics
+* Cookie banner
+* Contact page
+* Fix reading time label ("1 minutes")
+* Sitemap last modified seems to need to be in a toISOString() format.  Verify this and enforce it.
+* Rework routes enum and routes stories to include priority, lastModifiedDate, and change frequency values for sitemap
+* About page (tell the story of how this came about; put methodologies here)
 * Template (fonts, branding, styling, layouts)
 * Search bar (top right nav) (maybe only include in inner pages)
 * Favicon
-* Sitemap xml and page
+* Sitemap page?
 * More unit tests
+* Categories landing pages
+* Add posted in categories to the insights grid component
 * Mobile layout/responsiveness
 * Document methodologies
   * reading ease: flesch-kincaid
@@ -46,8 +63,10 @@ Will shift to its own page eventually.  Just getting some notes documented.
 * Add collaboration documentation/file
 * Insights landing page layout (probably a grid) (use GetInsightsRoutes to build grid of insights)
 * Insights detail page layout plus sidebar (use GetInsightsRoutes to build sidebar)
-* First insight:  "How likely is it that your home will be broken into?"
-* Second insight?  "Why does it seem like the world is getting worse?"
+* Insight Ideas:
+  * "How likely is it that your home will be broken into?"
+  * What are the odds that you will die today (include fight club long enough timeline quote)
+  * "Why does it seem like the world is getting worse?"
 * Document data sets used, any links used for data, and be clear on methodology for each insight.  Annotation is table stakes for this endeavor.
   * Dataset:  housing unit estimates by state, July 1, 2022:  https://www.census.gov/data/datasets/time-series/demo/popest/2020s-total-housing-units.html#v2022
   * Dataset:  burgleries by state for 2022:  https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/query
