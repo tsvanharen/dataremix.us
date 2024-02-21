@@ -2,10 +2,7 @@
 
 Data-driven insights into the modern human experience.
 
-<p align="center">
 [![build/deploy](https://github.com/tsvanharen/dataremix.us/actions/workflows/deploy.yml/badge.svg)](https://github.com/tsvanharen/dataremix.us/actions/workflows/deploy.yml) [![test](https://github.com/tsvanharen/dataremix.us/actions/workflows/test.yml/badge.svg)](https://github.com/tsvanharen/dataremix.us/actions/workflows/test.yml) [![GPLv3 License](https://img.shields.io/badge/license-GPL%20v3-limegreen.svg)](https://github.com/tsvanharen/dataremix.us/blob/main/LICENSE)
-</p>
-
 
 ## Documentation
 
