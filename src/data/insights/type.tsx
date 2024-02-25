@@ -1,4 +1,3 @@
-import { ReadabilityBadgeParams } from '@/components/ReadabilityBadge';
 import readingEase from '@/utils/flesch-kincaid';
 import { ReactElement, ReactNode, isValidElement } from 'react';
 
@@ -7,6 +6,12 @@ export type InsightCategory = {
   title: string
   intro: string
 };
+
+// export interface ReadabilityParams {
+//   twClassName: string,
+//   usGradeLevel: string,
+//   description: string,
+// }
 
 type ChangeFrequency = 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never' | undefined;
 
@@ -67,7 +72,9 @@ export class Insight {
 
   readonly content: ReactNode;
 
-  readonly readingLevel: ReadabilityBadgeParams;
+  // readonly readingLevel: ReadabilityParams;
+
+  readonly readingEase: number;
 
   readonly readingTimeMinutes: number;
 
@@ -91,12 +98,12 @@ export class Insight {
     const text = extractStrings(params.content);
     const re = readingEase(text);
 
-    this.readingLevel = {
-      ease: re.ease ?? 0,
-      twClassName: re.twClassName ?? '',
-      usGradeLevel: re.usGradeLevel ?? '',
-      description: re.description ?? '',
-    };
+    this.readingEase = re.ease ?? 9;
+    // this.readingLevel = {
+    //   twClassName: re.twClassName ?? '',
+    //   usGradeLevel: re.usGradeLevel ?? '',
+    //   description: re.description ?? '',
+    // };
 
     this.readingTimeMinutes = re.readingTimeMinutes;
   }

@@ -3,34 +3,34 @@ import { syllable } from '@/lib/syllable';
 
 export const scoreDefinitions = [
   {
-    isEasy: false, twClassName: 'bg-fuchsia-100', ease: 0, gte: -999999, lt: 0, usGradeLevel: 'Above professional', description: 'Extremely difficult to read.',
+    isEasy: false, twClassName: 'left-0', ease: 0, gte: -999999, lt: 0, usGradeLevel: 'above a professional reading level', description: 'extremely difficult to read',
   },
   {
-    isEasy: false, twClassName: 'bg-red-100', ease: 1, gte: 0, lt: 10, usGradeLevel: 'Professional', description: 'Extremely difficult to read. Best understood by university graduates.',
+    isEasy: false, twClassName: 'left-[11.11%]', ease: 1, gte: 0, lt: 10, usGradeLevel: 'at or above a professional reading level', description: 'extremely difficult to read, and is likely best understood by university graduates',
   },
   {
-    isEasy: false, twClassName: 'bg-orange-100', ease: 2, gte: 10, lt: 30, usGradeLevel: 'College graduate', description: 'Very difficult to read. Best understood by university graduates.',
+    isEasy: false, twClassName: 'left-[22.22%]', ease: 2, gte: 10, lt: 30, usGradeLevel: 'at or above a college graduate reading level', description: 'very difficult to read, and is likely best understood by university graduates',
   },
   {
-    isEasy: false, twClassName: 'bg-amber-100', ease: 3, gte: 30, lt: 50, usGradeLevel: 'College', description: 'Difficult to read.',
+    isEasy: false, twClassName: 'left-[33.33%]', ease: 3, gte: 30, lt: 50, usGradeLevel: 'at or above a college reading level', description: 'difficult to read',
   },
   {
-    isEasy: false, twClassName: 'bg-yellow-100', ease: 4, gte: 50, lt: 60, usGradeLevel: '10th to 12th grade', description: 'Fairly difficult to read.',
+    isEasy: false, twClassName: 'left-[44.44%]', ease: 4, gte: 50, lt: 60, usGradeLevel: 'at or above a 10th to 12th grade reading level in the United States', description: 'fairly difficult to read',
   },
   {
-    isEasy: true, twClassName: 'bg-lime-100', ease: 5, gte: 60, lt: 70, usGradeLevel: '8th & 9th grade', description: 'Plain English. Easily understood by 13- to 15-year-old students.',
+    isEasy: true, twClassName: 'left-[55.55%]', ease: 5, gte: 60, lt: 70, usGradeLevel: 'at or above an 8th or 9th grade reading level in the United States', description: 'what is considered to be plain English, and is easily understood by 13- to 15-year-old students',
   },
   {
-    isEasy: true, twClassName: 'bg-green-100', ease: 6, gte: 70, lt: 80, usGradeLevel: '7th grade', description: 'Fairly easy to read.',
+    isEasy: true, twClassName: 'left-[66.66%]', ease: 6, gte: 70, lt: 80, usGradeLevel: 'at or above a 7th grade reading level in the United States', description: 'fairly easy to read',
   },
   {
-    isEasy: true, twClassName: 'bg-teal-100', ease: 7, gte: 80, lt: 90, usGradeLevel: '6th grade', description: 'Easy to read. Conversational English for consumers.',
+    isEasy: true, twClassName: 'left-[77.77%]', ease: 7, gte: 80, lt: 90, usGradeLevel: 'at or above a 6th grade reading level in the United States', description: 'easy to read, and is considered to be on par with conversational English for consumers',
   },
   {
-    isEasy: true, twClassName: 'bg-cyan-100', ease: 8, gte: 90, lt: 100, usGradeLevel: '5th grade', description: 'Very easy to read. Easily understood by an average 11-year-old student.',
+    isEasy: true, twClassName: 'left-[88.88%]', ease: 8, gte: 90, lt: 100, usGradeLevel: 'at or above a 5th grade reading level in the United States', description: 'very easy to read, and easily understood by an average 11-year-old student',
   },
   {
-    isEasy: true, twClassName: 'bg-sky-100', ease: 9, gte: 100, lt: 9999999, usGradeLevel: 'Below 5th grade', description: 'Very easy to read.',
+    isEasy: true, twClassName: 'right-0', ease: 9, gte: 100, lt: 9999999, usGradeLevel: 'below a 5th grade reading level in the United States', description: 'very easy to read',
   },
 ];
 

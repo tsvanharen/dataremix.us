@@ -41,14 +41,7 @@ function FleschKincaid() {
           {
               scoreDefinitions.map((entry) => (
                 <tr key={entry.ease}>
-                  <td>
-                    <ReadabilityBadge
-                      ease={entry.ease}
-                      twClassName={entry.twClassName}
-                      usGradeLevel={entry.usGradeLevel}
-                      description={entry.description}
-                    />
-                  </td>
+                  <td>{entry.ease}</td>
                   <td>{entry.isEasy ? 'Yes' : 'No'}</td>
                   <td>{entry.usGradeLevel}</td>
                   <td className="text-right">{entry.gte}</td>
