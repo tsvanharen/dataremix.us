@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import ReadabilityBadge from '@/components/ReadabilityBadge';
 import { scoreDefinitions } from './flesch-kincaid';
 
 function FleschKincaid() {
