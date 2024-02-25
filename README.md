@@ -44,7 +44,13 @@ Will shift to its own page eventually.  Just getting some notes documented.
 * Google Analytics
 * Cookie banner
 * Contact page
-* Fix reading time label ("1 minutes")
+* Privacy policy
+* Terms and conditions
+* WCAG 2.1 AA accessibility goal
+* Move svg hero icons into components
+* Add last updated date to insights, where there is a last updated date
+* Run tests before deploy in workflow (currently only running when PR is opened)
+* Code coverage badge in README
 * Sitemap last modified seems to need to be in a toISOString() format.  Verify this and enforce it.
 * Rework routes enum and routes stories to include priority, lastModifiedDate, and change frequency values for sitemap
 * About page (tell the story of how this came about; put methodologies here)
