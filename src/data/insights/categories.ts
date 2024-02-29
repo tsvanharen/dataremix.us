@@ -1,7 +1,9 @@
 import { InsightCategory } from './type';
 
+type CategoryName = 'Home' | 'Family' | 'UnitedStates';
+
 const insightCategories: {
-  [name: string]: InsightCategory
+  [K in CategoryName]: InsightCategory
 } = {
   Home: {
     slug: 'home',

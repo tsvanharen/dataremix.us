@@ -18,8 +18,8 @@ export default function Logo({
   let slashStyle = 'text-4xl top-[0.15rem] scale-125';
 
   if (variant === Variant.HomePage) {
-    linkStyle = 'md:text-7xl sm:text-5xl cursor-default';
-    slashStyle = 'md:text-8xl sm:text-6xl md:top-[0.45rem] sm:top-[0.3rem]';
+    linkStyle = 'md:text-7xl text-5xl cursor-default';
+    slashStyle = 'md:text-8xl text-6xl md:top-[0.45rem] top-[0.3rem]';
   }
 
   const text = (
