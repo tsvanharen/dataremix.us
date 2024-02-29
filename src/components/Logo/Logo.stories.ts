@@ -11,15 +11,24 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const NavLogo: Story = {
+export const Nav: Story = {
   parameters: {
     controls: { exclude: ['variant'] },
   },
 };
 
-export const LargeLogo: Story = {
+export const HomePage: Story = {
   args: {
     variant: Variant.HomePage,
+  },
+  parameters: {
+    controls: { exclude: ['variant'] },
+  },
+};
+
+export const Favicon: Story = {
+  args: {
+    variant: Variant.Favicon,
   },
   parameters: {
     controls: { exclude: ['variant'] },
