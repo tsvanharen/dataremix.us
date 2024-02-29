@@ -7,12 +7,12 @@ export default function PageHome() {
     <>
       <section className="pt-8">
         <div className="text-center mb-8">
-          <Logo variant={Variant.Large} />
+          <Logo variant={Variant.HomePage} />
         </div>
         <h1 aria-hidden hidden>
           Data/Remix
         </h1>
-        <div className="text-2xl text-center mb-16">
+        <div className="md:text-2xl sm:text-xl text-center md:mb-16 sm:mb-8">
           Data-driven insights into the modern human experience.
         </div>
       </section>
@@ -35,8 +35,8 @@ export default function PageHome() {
             Fortunately, we have data at our disposal that can help fill some of the gaps in our instinctual decision-making.
           </p>
         </section>
-        <div className="flex">
-          <section className="pt-8 pr-8 flex-1">
+        <div className="md:flex">
+          <section className="pt-8 md:pr-8 md:flex-1">
             <h3>Mission</h3>
             <p className="pb-0">
               This project aspires to:
@@ -48,11 +48,12 @@ export default function PageHome() {
               <li>Help us make decisions that do not negatively impact our ability to pursue fulfillment and happiness.</li>
             </ul>
           </section>
-          <section className="pt-8 pl-8 flex-1">
+          <section className="pt-8 md:pl-8 md:flex-1">
             <h3>Methodology</h3>
             <ul>
               <li>
                 We curate topics (called
+                {' '}
                 <span className="italic">Insights</span>
                 ) that rely on data sets that are freely available for anyone to download, view, query, filter, sort, aggregate, and summarize as they see fit.
               </li>

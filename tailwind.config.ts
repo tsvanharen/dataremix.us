@@ -11,4 +11,11 @@ export default {
   compilerOptions: {
     baseUrl: './',
   },
+  theme: {
+    extend: {
+      screens: {
+        xs: '320px',
+      },
+    },
+  },
 };

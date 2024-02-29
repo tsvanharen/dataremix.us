@@ -27,6 +27,7 @@ Data-driven insights into the modern human experience.
 * Check dictionary words (re: syllable):  https://github.com/words/syllable/pull/33#issuecomment-507716483
 * https://shields.io/
 * https://heroicons.com/
+* Inspiration for mobile hamburger menu:  https://codesandbox.io/p/sandbox/tailwind-react-hamburger-menu-tjhfyx?file=%2Fsrc%2Fcomponents%2FHeader%2FHeader.js
 * Setting priority on content (from https://www.contentpowered.com/blog/xml-sitemap-priority-changefreq/):
   * 0.0 – 0.3: Old news posts, outdated guides, irrelevant pages you nevertheless don't want to delete, merge, or update.
   * 0.4 – 0.7: Articles, blog posts, category pages, FAQs, system pages. The bulk of your site's content falls into this range.
