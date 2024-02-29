@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 export enum Variant {
   HomePage = 'homePage', // larger logo
+  Favicon = 'favicon', // not used within the app directly; inspiration for the site's favicon image
 }
 
 export default function Logo({
@@ -11,6 +12,19 @@ export default function Logo({
 }: {
   variant?: Variant
 }) {
+  if (variant === Variant.Favicon) {
+    return (
+      <div className={`${logoFont.className} bg-white text-7xl flex justify-center items-center whitespace-nowrap uppercase tracking-[-0.1rem] font-light border-[1px] border-black rounded-sm h-32 w-32`}>
+        <div className="relative -top-[0.1rem]">
+          <span className="inline-block text-red-500 pr-[0.13rem]">D</span>
+          <span className="inline-block text-stone-600">/</span>
+          <span className="inline-block scale-x-[-1] text-purple-700 pr-[0.16rem]">R</span>
+        </div>
+
+      </div>
+    );
+  }
+
   const sharedLinkStyle = 'whitespace-nowrap uppercase tracking-[-0.1rem] font-light hover:no-underline';
   const sharedSlashStyle = 'inline-block relative text-stone-600';
 
@@ -32,7 +46,7 @@ export default function Logo({
 
   return (
     <>
-      {variant !== Variant.HomePage && (
+      {variant !== Variant.HomePage && variant !== Variant.Favicon && (
       <Link
         href={Route.HOME}
         title="Data/Remix Home"
