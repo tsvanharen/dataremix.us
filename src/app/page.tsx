@@ -12,7 +12,7 @@ export default function PageHome() {
         <h1 aria-hidden hidden>
           Data/Remix
         </h1>
-        <div className="md:text-2xl sm:text-xl text-center md:mb-16 sm:mb-8">
+        <div className="md:text-2xl text-xl text-center md:mb-16 mb-8">
           Data-driven insights into the modern human experience.
         </div>
       </section>
