@@ -20,7 +20,7 @@ export default function PageHome() {
         <section>
           <h3>Overview</h3>
           <p>
-            We as humans are emotional creatures.  Our emotional system is complex and wonderful, and it is one of our defining characteristics.
+            We as humans are emotional creatures.  Our emotional system is complex and wonderful.  It is one of our defining characteristics.
           </p>
           <p>
             Food, music, film, books, social media, religion, politics, marketing, medicine, engineering, news media, software, law, love, and our very survival are underscored by emotional decisions.
