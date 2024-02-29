@@ -58,7 +58,6 @@ Will shift to its own page eventually.  Just getting some notes documented.
 * About page (tell the story of how this came about; put methodologies here)
 * Template (fonts, branding, styling, layouts)
 * Search bar (top right nav) (maybe only include in inner pages)
-* Favicon
 * Sitemap page?
 * More unit tests
 * Categories landing pages

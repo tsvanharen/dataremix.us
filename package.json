@@ -27,7 +27,7 @@
     "@storybook/addon-links": "^7.6.16",
     "@storybook/blocks": "^7.6.16",
     "@storybook/nextjs": "^7.6.16",
-    "@storybook/react": "^7.6.16",
+    "@storybook/react": "^7.6.17",
     "@storybook/test": "^7.6.17",
     "@types/node": "^20",
     "@types/react": "^18",
