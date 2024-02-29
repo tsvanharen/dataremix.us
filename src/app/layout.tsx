@@ -19,7 +19,7 @@ export default function LayoutRoot({
     <html lang="en">
       <body className={`${baseFont.className} flex flex-col items-center`}>
         <Header />
-        <main className="mx-auto max-w-5xl w-full py-4">
+        <main className="mx-auto max-w-5xl w-full py-4 px-8">
           {children}
         </main>
         <Footer />
