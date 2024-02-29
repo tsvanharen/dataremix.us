@@ -8,7 +8,7 @@ export default function PageInsightCategories() {
       <h1>
         Insight Categories
       </h1>
-      <section className="grid grid-cols-3 gap-4">
+      <section className="grid md:grid-cols-3 grid-cols-1 gap-4">
         {Object.values(insightCategories).map((cat) => (
           <Link
             href={`${Route.INSIGHTS_CATEGORIES}/${cat.slug}`}

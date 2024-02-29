@@ -99,11 +99,6 @@ export class Insight {
     const re = readingEase(text);
 
     this.readingEase = re.ease ?? 9;
-    // this.readingLevel = {
-    //   twClassName: re.twClassName ?? '',
-    //   usGradeLevel: re.usGradeLevel ?? '',
-    //   description: re.description ?? '',
-    // };
 
     this.readingTimeMinutes = re.readingTimeMinutes;
   }

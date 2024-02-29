@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function PageHome() {
   return (
     <>
-      <section className="pt-8">
+      <section className="pt-4">
         <div className="text-center mb-8">
           <Logo variant={Variant.HomePage} />
         </div>
