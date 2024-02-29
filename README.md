@@ -47,6 +47,7 @@ Will shift to its own page eventually.  Just getting some notes documented.
 * Contact page
 * Privacy policy
 * Terms and conditions
+* RSS/Atom feed
 * WCAG 2.1 AA accessibility goal
 * Move svg hero icons into components
 * Add last updated date to insights, where there is a last updated date
@@ -62,7 +63,6 @@ Will shift to its own page eventually.  Just getting some notes documented.
 * More unit tests
 * Categories landing pages
 * Add posted in categories to the insights grid component
-* Mobile layout/responsiveness
 * Document methodologies
   * reading ease: flesch-kincaid
   * reading scores and colors (same as in Storybook?)
