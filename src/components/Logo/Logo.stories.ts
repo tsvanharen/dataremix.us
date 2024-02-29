@@ -19,7 +19,7 @@ export const NavLogo: Story = {
 
 export const LargeLogo: Story = {
   args: {
-    variant: Variant.Large,
+    variant: Variant.HomePage,
   },
   parameters: {
     controls: { exclude: ['variant'] },

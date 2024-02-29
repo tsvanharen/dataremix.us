@@ -7,8 +7,8 @@ const HomeBreakIns = new Insight({
   title: 'Home Break-Ins',
   intro: 'What are the odds that your home will be broken into?',
   publishDate: new Date(2024, 1, 15, 19, 29, 15),
-  categories: [insightCategories.AtHome, insightCategories.MyFamily],
-  content: <>Hi.</>,
+  categories: [insightCategories.Home, insightCategories.Family, insightCategories.UnitedStates],
+  content: <>Coming soon.</>,
 });
 
 export default HomeBreakIns;

@@ -27,6 +27,7 @@ Data-driven insights into the modern human experience.
 * Check dictionary words (re: syllable):  https://github.com/words/syllable/pull/33#issuecomment-507716483
 * https://shields.io/
 * https://heroicons.com/
+* Inspiration for mobile hamburger menu:  https://codesandbox.io/p/sandbox/tailwind-react-hamburger-menu-tjhfyx?file=%2Fsrc%2Fcomponents%2FHeader%2FHeader.js
 * Setting priority on content (from https://www.contentpowered.com/blog/xml-sitemap-priority-changefreq/):
   * 0.0 – 0.3: Old news posts, outdated guides, irrelevant pages you nevertheless don't want to delete, merge, or update.
   * 0.4 – 0.7: Articles, blog posts, category pages, FAQs, system pages. The bulk of your site's content falls into this range.
@@ -46,6 +47,7 @@ Will shift to its own page eventually.  Just getting some notes documented.
 * Contact page
 * Privacy policy
 * Terms and conditions
+* RSS/Atom feed
 * WCAG 2.1 AA accessibility goal
 * Move svg hero icons into components
 * Add last updated date to insights, where there is a last updated date
@@ -61,7 +63,6 @@ Will shift to its own page eventually.  Just getting some notes documented.
 * More unit tests
 * Categories landing pages
 * Add posted in categories to the insights grid component
-* Mobile layout/responsiveness
 * Document methodologies
   * reading ease: flesch-kincaid
   * reading scores and colors (same as in Storybook?)
