@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function InsightsGrid({ insights }: { insights: Insight[] }) {
   return (
-    <section className="grid grid-cols-3 gap-4">
+    <section className="grid md:grid-cols-3 grid-cols-1 gap-4">
       {insights.map((ins) => (
         <Link
           href={`${Route.INSIGHTS}/${ins.slug}`}

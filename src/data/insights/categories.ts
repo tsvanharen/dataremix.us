@@ -3,14 +3,19 @@ import { InsightCategory } from './type';
 const insightCategories: {
   [name: string]: InsightCategory
 } = {
-  AtHome: {
-    slug: 'at-home',
-    title: 'At Home',
+  Home: {
+    slug: 'home',
+    title: 'Home',
     intro: '',
   },
-  MyFamily: {
-    slug: 'my-family',
-    title: 'My Family',
+  Family: {
+    slug: 'family',
+    title: 'Family',
+    intro: '',
+  },
+  UnitedStates: {
+    slug: 'united-states',
+    title: 'United States',
     intro: '',
   },
 };
