@@ -22,7 +22,7 @@
     "syllable": "^5.0.1"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^7.6.16",
+    "@storybook/addon-essentials": "^8.0.4",
     "@storybook/addon-interactions": "^7.6.16",
     "@storybook/addon-links": "^7.6.16",
     "@storybook/blocks": "^7.6.16",
